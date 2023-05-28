@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+
+/*OVERALL STYLING*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fe652c;    /* color of the scroll thumb */
+  border-radius: 50px;       /* roundness of the scroll thumb */
+  border: 3px transparent;  /* creates padding around scroll thumb */
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+
+section {
+  min-height: 100vh;
+}
+
+
+/*HEADER*/
+li, a, .button-contact {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: transparent;
+  box-shadow: 1px 1px 5px rgba(0,0,0, 0.8);
+}
+
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  height: 80px;
+}
+
+
+
+
+.nav__links {
+  list-style: none;
+
+}
+
+
+.nav__links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav__links li a {
+  color: black;
+}
+
+.nav__links li a:hover {
+  color: #fe652c;
+  transition: all .3s ease 0s;
+
+}
+
+
+.button-contact {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(254, 101, 44, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+}
+
+
+.button-contact:hover {
+  background-color: rgba(254, 101, 44, 0.8);
+  transition: all 0.3s ease 0s;
+
+}
+
+/*HOME SECTION*/
+
+
+
+#home {
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../imgs/landing.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#home h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 200px;
+  color: rgba(254, 101, 44, 1);
+
+}
+
+
+#home h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-left: 10%;
+  font-size: 100px;
+}
+
+.home-headline {
+  padding-top: 100px;
+  margin-left: 10%;
+}
+
+.button-me {
+  padding: 9px 25px;
+  border-radius: 50px;
+
+  cursor: pointer;
+  border: none;
+  margin-left: 10%;
+  margin-top: 10%;
+  height: 9%;
+  width: 12%;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button-me:hover {
+  background-color: #fe652c;
+  box-shadow: 3px 4px 5px #000;
+  transition: all .3s ease 0s;
+}
+
+
+/*TAGESPFLEGE*/
+
+#tagespflege {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../imgs/georg-arthur-pflueger-TeWwYARfcM4-unsplash.jpg);
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+#tagespflege h1 {
+  margin: 0;
+  font-family:'Playfair Display', serif;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 80px;
+  color: #fff;
+
+}
+
+iframe  {
+  margin-top: 5%;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+}
+
+
+#container-iframe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*Contact*/
+
+#contact h1 {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10%;
+  margin-left: 10%;
+  color: #edf0f1;
+  font-size: 40px;
+}
+
+#contact h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+#emaildiv {
+  margin-left: 10%;
+  margin-top: 4%;
+}
+#emaildiv a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
+
+#emaildiv button {
+  padding: 9px 25px;
+  border-radius: 50px;
+
+  cursor: pointer;
+  border: none;
+  height: 9%;
+  width: 16%;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#emaildiv button:hover {
+  background-color: #fe652c;
+  box-shadow: 3px 4px 5px #000;
+  transition: all .5s ease .1s;
+  color: white;
+}
+
+#contact {
+  background-color: rgba(252, 100, 44, .8);
+
+}
+
+
+
+/*EMAIL HIDE*/
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+}
+
+.hiddenEmail {
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 48rem;
+}
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #03b5d2;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.accordion button:hover::after, .accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+  color: #03b5d2;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+
+/*FOOTER*/
+
+footer p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer a {
+  color: #fe652c;
+}
+
+footer {
+  padding: 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+  background: transparent;
+}
